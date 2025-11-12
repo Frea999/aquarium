@@ -58,7 +58,8 @@ function setupGame() {
     trash.dataset.index = i;
     trash.style.position = "absolute";
     trash.style.left = `${spacing * (i + 1)}px`;
-    trash.style.bottom = "3vh";
+    trash.style.bottom = "50vh";
+    trash.style.zIndex = "100";
     trash.innerHTML = `<img src="${img}" width="60">`;
     document.body.appendChild(trash);
   });

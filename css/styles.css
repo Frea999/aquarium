@@ -6,9 +6,9 @@ html, body{
 }
 
 :root{
- 
-  --sand-lift: -80px; 
-  --sten-lift: -110px;
+
+  --sand-lift: -410px; /* moved higher so sand lifts up closer to coral */
+  --sten-lift: -410px; /* moved higher so stone peeks more */
 }
 
 .home{
@@ -50,6 +50,7 @@ html, body{
   left: 0;
   top: 0;
 	transition:ease all .4s;
+  z-index: 5;
 }
 
 .carried-trash {
@@ -191,7 +192,7 @@ html, body{
   width: 100vw;
   display: flex;
   gap: 10px;
-  z-index: 2147483647; 
+  z-index: 10; 
   justify-content: center;
 }
 
@@ -199,7 +200,7 @@ html, body{
     width: 50px;
     height: 50px;
     position: relative; 
-    z-index: 2147483647;
+    z-index: 10;
 }
 .item {
   width: 70px;
